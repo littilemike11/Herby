@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@plugin "daisyui" {
-  themes: lemonade
-}
-
 
 /* @layer base {
   :root {
@@ -73,3 +69,120 @@
     @apply bg-background text-foreground;
   }
 } */
+
+@layer base {
+  :root {
+    /* === Calm Cannabis Theme (Light) === */
+    --background: 100 20% 97%;
+    /* very light sage */
+    --foreground: 155 10% 15%;
+    /* dark muted green for text */
+    --card: 100 20% 98%;
+    --card-foreground: 155 10% 15%;
+
+    --popover: 100 20% 98%;
+    --popover-foreground: 155 10% 15%;
+
+    --primary: 145 25% 35%;
+    /* calming forest green */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 120 15% 92%;
+    /* soft leafy green-gray */
+    --secondary-foreground: 155 10% 15%;
+
+    --muted: 120 12% 90%;
+    /* gentle moss tone */
+    --muted-foreground: 155 8% 40%;
+
+    --accent: 90 30% 80%;
+    /* light mint accent */
+    --accent-foreground: 145 25% 25%;
+
+    --destructive: 0 75% 55%;
+    /* still red, for warnings */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 120 10% 85%;
+    /* soft neutral green border */
+    --input: 120 10% 85%;
+    --ring: 145 25% 35%;
+
+    /* Chart colors inspired by nature */
+    --chart-1: 145 35% 40%;
+    --chart-2: 100 30% 50%;
+    --chart-3: 80 25% 45%;
+    --chart-4: 50 35% 55%;
+    --chart-5: 25 60% 50%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    /* === Calm Cannabis Theme (Dark Mode) === */
+    --background: 145 15% 10%;
+    /* deep forest green */
+    --foreground: 100 20% 95%;
+
+    --card: 145 15% 12%;
+    --card-foreground: 100 20% 95%;
+
+    --popover: 145 15% 12%;
+    --popover-foreground: 100 20% 95%;
+
+    --primary: 120 30% 55%;
+    /* brighter herbal green */
+    --primary-foreground: 145 15% 10%;
+
+    --secondary: 145 15% 20%;
+    --secondary-foreground: 100 20% 95%;
+
+    --muted: 145 15% 20%;
+    --muted-foreground: 120 10% 70%;
+
+    --accent: 90 30% 35%;
+    /* mossy accent */
+    --accent-foreground: 100 20% 95%;
+
+    --destructive: 0 60% 40%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 145 15% 25%;
+    --input: 145 15% 25%;
+    --ring: 120 30% 55%;
+
+    --chart-1: 120 30% 50%;
+    --chart-2: 100 25% 55%;
+    --chart-3: 80 25% 50%;
+    --chart-4: 50 35% 60%;
+    --chart-5: 25 60% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased transition-colors duration-300;
+    font-family: "Inter", "Poppins", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-primary font-semibold;
+  }
+
+  button {
+    @apply bg-primary text-primary-foreground hover:opacity-90 transition-all duration-200 rounded-lg;
+  }
+
+  input,
+  textarea,
+  select {
+    @apply bg-input border border-border rounded-md px-3 py-2 focus:ring-2 focus:ring-ring outline-none transition;
+  }
+}
