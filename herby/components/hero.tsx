@@ -45,7 +45,7 @@ import { SupabaseLogo } from "./supabase-logo";
 
 export function Hero() {
   return (
-    <main className=" bg-gradient-to-b from-[#f4f8f4] to-[#35df43] text-[#1b1f1a]">
+    <main className="bg-gradient-to-b from-[#f4f8f4] to-[#35df43] text-[#1b1f1a]">
       {/* Hero Section */}
       <section className="flex flex-col items-center justify-center text-center px-6 py-24">
         <h2 className="text-5xl font-bold text-green-900 leading-tight max-w-2xl">
@@ -58,13 +58,13 @@ export function Hero() {
         </p>
         <div className="mt-10 flex flex-col sm:flex-row gap-4">
           <a
-            href="/signup/dispensary"
+            href="/dispensaries"
             className="bg-green-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition"
           >
             Join as a Dispensary
           </a>
           <a
-            href="/signup/driver"
+            href="/drivers"
             className="border border-green-700 text-green-700 px-8 py-3 rounded-lg font-semibold hover:bg-green-100 transition"
           >
             Become a Driver
@@ -122,13 +122,13 @@ export function Hero() {
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="/signup/dispensary"
+            href="/dispensaries"
             className="bg-white text-green-800 font-semibold px-8 py-3 rounded-lg hover:bg-green-100 transition"
           >
             For Dispensaries
           </a>
           <a
-            href="/signup/driver"
+            href="/drivers"
             className="border border-white text-white font-semibold px-8 py-3 rounded-lg hover:bg-green-600 transition"
           >
             For Drivers
